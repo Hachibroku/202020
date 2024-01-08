@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from timer.views import load_timer
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", load_timer),
 ]
